@@ -1,1 +1,338 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOOMLINK | Empowering Artisans</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #faf8f2;
+    color: #263b32;
+    line-height: 1.7;
+}
+
+header {
+    background: #173f35;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #173f35, #47765b);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #d6a45f;
+    color: #173f35;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 9%;
+}
+
+h2 {
+    text-align: center;
+    color: #173f35;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    max-width: 850px;
+    text-align: center;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px #00000012;
+    border-bottom: 4px solid #d6a45f;
+}
+
+.card h3 {
+    color: #47765b;
+    margin-bottom: 10px;
+}
+
+.workflow {
+    background: #edf1e9;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.number {
+    background: #173f35;
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+}
+
+.payment {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 15px #00000012;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 22px;
+    background: #173f35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 18px;
+    font-weight: bold;
+    color: #47765b;
+}
+
+.impact {
+    background: #173f35;
+    color: white;
+    text-align: center;
+}
+
+.impact h2 {
+    color: white;
+}
+
+.sdg {
+    display: inline-block;
+    background: #ffffff20;
+    padding: 15px 22px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #102e27;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 650px) {
+    header {
+        justify-content: center;
+        gap: 12px;
+    }
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LOOMLINK</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#impact">Impact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>LOOMLINK</h1>
+    <p>Weaving Tradition into the Digital Future</p>
+    <p>A digital marketplace connecting traditional artisans and weavers directly with shopkeepers and bulk buyers.</p>
+    <a href="#about" class="btn">Explore Our Prototype</a>
+</div>
+
+<section id="about">
+    <h2>About Our Project</h2>
+    <div class="intro">
+        <p>Traditional artisans and weavers often face limited market access, dependence on middlemen, and difficulties finding bulk buyers. LOOMLINK aims to bridge this gap through a collaborative digital marketplace.</p>
+        <br>
+        <p>Our vision is to empower artisan communities, support traditional craftsmanship, and create better opportunities through technology.</p>
+    </div>
+</section>
+
+<section id="features" style="background:#f0eee6;">
+    <h2>Our Key Features</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>👤 User Registration</h3>
+            <p>Separate roles for artisans, group leaders, and shopkeepers.</p>
+        </div>
+        <div class="card">
+            <h3>🤝 Artisan Groups</h3>
+            <p>Artisans can form groups and collaborate on orders.</p>
+        </div>
+        <div class="card">
+            <h3>🗳️ Democratic Elections</h3>
+            <p>Group members can nominate and elect their leaders.</p>
+        </div>
+        <div class="card">
+            <h3>🧵 Product Marketplace</h3>
+            <p>Showcase handmade products and connect with buyers.</p>
+        </div>
+        <div class="card">
+            <h3>📦 Bulk Orders</h3>
+            <p>Shopkeepers can request products in larger quantities.</p>
+        </div>
+        <div class="card">
+            <h3>💰 Payment Transparency</h3>
+            <p>A proposed payment model makes group distribution clear.</p>
+        </div>
+    </div>
+</section>
+
+<section class="workflow" id="workflow">
+    <h2>How LOOMLINK Works</h2>
+    <div class="steps">
+        <div class="step"><span class="number">1</span><h3>Register</h3><p>Artisans join the platform.</p></div>
+        <div class="step"><span class="number">2</span><h3>Connect</h3><p>Artisans create or join groups.</p></div>
+        <div class="step"><span class="number">3</span><h3>Elect</h3><p>Members select their leader.</p></div>
+        <div class="step"><span class="number">4</span><h3>Showcase</h3><p>Products are displayed online.</p></div>
+        <div class="step"><span class="number">5</span><h3>Order</h3><p>Shopkeepers request bulk orders.</p></div>
+        <div class="step"><span class="number">6</span><h3>Deliver</h3><p>Groups coordinate production.</p></div>
+    </div>
+</section>
+
+<section>
+    <h2>Proposed Payment Model</h2>
+    <div class="payment">
+        <p>Our proposed model illustrates how an order amount could be distributed.</p>
+        <h3>Enter Order Amount (₹)</h3>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button onclick="calculate()">Calculate Distribution</button>
+        <div id="result"></div>
+        <p style="font-size:13px;margin-top:15px;">Illustrative proposal: 95% artisan group share and 5% leader coordination commission. Not a live payment system.</p>
+    </div>
+</section>
+
+<section class="impact" id="impact">
+    <h2>Our Expected Impact</h2>
+    <p>Empowering artisans, preserving traditional skills, and supporting sustainable livelihoods.</p>
+    <br>
+    <div class="sdg">SDG 8<br>Decent Work</div>
+    <div class="sdg">SDG 9<br>Innovation</div>
+    <div class="sdg">SDG 12<br>Responsible Production</div>
+</section>
+
+<section>
+    <h2>Future Development</h2>
+    <div class="intro">
+        <p>Future plans include AI-assisted product descriptions, regional language support, live group voting, user accounts, order management, and secure backend integration.</p>
+    </div>
+</section>
+
+<footer>
+    <h2 style="color:white;">LOOMLINK</h2>
+    <p>Developed by Team Alpha Coders</p>
+    <p>TECH4BHARAT 2026 | Prototype Presentation</p>
+</footer>
+
+<script>
+function calculate() {
+    const amount = Number(document.getElementById("amount").value);
+    const result = document.getElementById("result");
+
+    if (!Number.isFinite(amount) || amount <= 0) {
+        result.textContent = "Please enter a valid order amount.";
+        return;
+    }
+
+    const artisan = amount * 0.95;
+    const leader = amount * 0.05;
+
+    result.innerHTML =
+        "Artisan Group (95%): ₹" + artisan.toFixed(2) +
+        "<br>Leader Commission (5%): ₹" + leader.toFixed(2);
+}
+</script>
+
+</body>
+</html>
+
