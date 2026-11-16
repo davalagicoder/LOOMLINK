@@ -1,840 +1,140 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOOMLINK | Empowering Artisans</title>
+<!-- ARTISAN GALLERY -->
+<section id="artisan-gallery">
+    <h2>Meet Our Artisans</h2>
+    <p>Discover the talented people behind traditional craftsmanship.</p>
+
+    <div class="gallery">
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=700&q=80" alt="Textile craft">
+            <h3>Traditional Weavers</h3>
+            <p>Creating beautiful fabrics through traditional weaving.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=700&q=80" alt="Pottery">
+            <h3>Pottery Artisans</h3>
+            <p>Making unique handmade clay products.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=700&q=80" alt="Handicraft">
+            <h3>Handicraft Makers</h3>
+            <p>Creating beautiful handmade craft products.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUCT GALLERY -->
+<section id="product-gallery">
+    <h2>Our Handmade Products</h2>
+    <p>Explore products created by skilled artisans.</p>
+
+    <div class="gallery">
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=700&q=80" alt="Textile">
+            <h3>Handwoven Textiles</h3>
+            <p>Traditional fabrics and woven creations.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=700&q=80" alt="Pottery">
+            <h3>Handmade Pottery</h3>
+            <p>Decorative and useful clay products.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=700&q=80" alt="Decorative crafts">
+            <h3>Handicrafts</h3>
+            <p>Unique handmade decorative products.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECT INNOVATION -->
+<section id="innovation">
+    <h2>What Makes LOOMLINK Special?</h2>
+
+    <div class="gallery">
+        <div class="gallery-card">
+            <h3>Artisan Community</h3>
+            <p>Bringing individual artisans together into organized groups.</p>
+        </div>
+
+        <div class="gallery-card">
+            <h3>Democratic Leadership</h3>
+            <p>Supporting nomination and voting for group leaders.</p>
+        </div>
+
+        <div class="gallery-card">
+            <h3>Direct Marketplace</h3>
+            <p>Connecting artisans with shopkeepers and bulk buyers.</p>
+        </div>
+
+        <div class="gallery-card">
+            <h3>Work Coordination</h3>
+            <p>Helping groups organize production and allocate tasks.</p>
+        </div>
+
+        <div class="gallery-card">
+            <h3>Transparent Payments</h3>
+            <p>Proposed clear distribution of order payments.</p>
+        </div>
+
+        <div class="gallery-card">
+            <h3>Future AI Support</h3>
+            <p>Planning AI-assisted product descriptions and regional language support.</p>
+        </div>
+    </div>
+</section>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-html { scroll-behavior: smooth; }
-
-body {
-    background: #faf8f3;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: #43291f;
-    color: white;
-    padding: 17px 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.logo {
-    font-size: 27px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-nav a:hover { color: #f5c77e; }
-
-.hero {
-    min-height: 480px;
-    background:
-    linear-gradient(rgba(35,20,12,.65),rgba(35,20,12,.65)),
-    url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1600&q=85");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 65px 9%;
-}
-
-.hero h1 {
-    font-size: 48px;
-    max-width: 700px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 650px;
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.btn, button {
-    display: inline-block;
-    background: #d99a45;
-    color: #25170e;
-    border: none;
-    padding: 12px 22px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.btn:hover, button:hover { background: #edb967; }
-
-section { padding: 65px 8%; }
-
-.heading {
+#artisan-gallery, #product-gallery, #innovation {
+    padding: 55px 8%;
     text-align: center;
-    margin-bottom: 35px;
 }
 
-.heading h2 {
-    font-size: 32px;
+#artisan-gallery h2, #product-gallery h2,
+#innovation h2 {
     color: #543323;
-    margin-bottom: 8px;
+    font-size: 30px;
+    margin-bottom: 12px;
 }
 
-.heading p { color: #777; }
-
-.intro {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.intro p {
-    margin: 14px 0;
-    color: #666;
-}
-
-.dark-section {
-    background: #f0e7da;
-}
-
-.grid {
+.gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-    gap: 23px;
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
 }
 
-.card {
+.gallery-card {
     background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,.08);
-    transition: .3s;
-}
-
-.card:hover { transform: translateY(-5px); }
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.card-content { padding: 19px; }
-
-.card h3 {
-    color: #543323;
-    margin-bottom: 7px;
-}
-
-.card p {
-    font-size: 14px;
-    color: #666;
-}
-
-.price {
-    color: #a45e22;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.tag {
-    display: inline-block;
-    background: #f5ead8;
-    color: #75451e;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-.info-box {
-    background: white;
-    padding: 25px;
-    border-radius: 9px;
-    margin-top: 20px;
-    box-shadow: 0 3px 12px rgba(0,0,0,.05);
-}
-
-.info-box h3 {
-    color: #543323;
-    margin-bottom: 10px;
-}
-
-.info-box ul {
-    padding-left: 22px;
-    color: #666;
-}
-
-.feature {
-    background: white;
-    padding: 24px;
-    border-radius: 9px;
-    text-align: center;
-    box-shadow: 0 3px 12px rgba(0,0,0,.05);
-}
-
-.feature h3 {
-    color: #543323;
-    margin-bottom: 10px;
-}
-
-.workflow {
-    max-width: 850px;
-    margin: auto;
-}
-
-.step {
-    background: white;
-    border-left: 5px solid #c48b48;
-    padding: 17px 22px;
-    margin: 15px 0;
-    border-radius: 5px;
-}
-
-.step h3 { color: #543323; }
-
-input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 9px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
-}
-
-label { font-weight: bold; }
-
-.result {
-    margin-top: 15px;
-    background: #f5ead8;
     padding: 15px;
-    border-radius: 6px;
-    color: #543323;
-    font-weight: bold;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    margin-top: 15px;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: left;
 }
 
-th {
-    background: #543323;
-    color: white;
+.gallery-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
 }
 
-.notice {
-    color: #79552e;
-    background: #fff2dc;
-    padding: 13px;
-    border-radius: 6px;
-    margin-top: 15px;
+.gallery-card h3 {
+    color: #543323;
+    margin: 12px 0 6px;
+}
+
+.gallery-card p {
+    color: #666;
     font-size: 14px;
 }
-
-footer {
-    background: #43291f;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-footer p { margin-top: 7px; }
-
-@media(max-width:650px) {
-    header { justify-content: center; }
-    nav { justify-content: center; }
-    .hero h1 { font-size: 35px; }
-    section { padding: 45px 6%; }
-    table { font-size: 13px; }
-    th, td { padding: 8px; }
-}
 </style>
-</head>
-
-<body>
-
-<header>
-    <div class="logo">LOOMLINK</div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#artisans">Artisans</a>
-        <a href="#products">Products</a>
-        <a href="#features">Features</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#impact">Impact</a>
-    </nav>
-</header>
-
-<!-- HOME -->
-<div class="hero" id="home">
-    <h1>Connecting Traditional Artisans to Modern Markets</h1>
-    <p>
-        Empowering traditional artisans and weavers through
-        digital connectivity, collective strength and better
-        market opportunities.
-    </p>
-    <a href="#products" class="btn">Explore Handmade Products</a>
-</div>
-
-<!-- PROJECT INTRODUCTION -->
-<section id="about">
-    <div class="heading">
-        <h2>About LOOMLINK</h2>
-        <p>Preserving traditions. Creating opportunities.</p>
-    </div>
-
-    <div class="intro">
-        <p>
-            LOOMLINK is a proposed digital marketplace that
-            connects traditional artisans, weavers, artisan
-            groups, shopkeepers and bulk buyers on one platform.
-        </p>
-        <p>
-            Many skilled artisans struggle to reach larger
-            markets, find regular customers and coordinate
-            bulk orders. LOOMLINK aims to reduce these barriers
-            by providing a shared digital platform.
-        </p>
-        <p>
-            Our vision is to make traditional craftsmanship
-            more visible, accessible and sustainable.
-        </p>
-    </div>
-
-    <div class="grid" style="margin-top:30px">
-        <div class="info-box">
-            <h3>Our Vision</h3>
-            <p>Build a connected marketplace where traditional
-            craftsmanship receives wider recognition.</p>
-        </div>
-        <div class="info-box">
-            <h3>Our Mission</h3>
-            <p>Help artisan communities organize their work,
-            display products and connect with buyers.</p>
-        </div>
-        <div class="info-box">
-            <h3>Our Goal</h3>
-            <p>Improve market access and encourage the
-            preservation of traditional skills.</p>
-        </div>
-    </div>
-</section>
-
-<!-- PROBLEM AND SOLUTION -->
-<section class="dark-section">
-    <div class="heading">
-        <h2>Problem & Proposed Solution</h2>
-        <p>Understanding the challenges faced by artisan communities</p>
-    </div>
-
-    <div class="grid">
-        <div class="info-box">
-            <h3>Problems Faced by Artisans</h3>
-            <ul>
-                <li>Limited access to larger markets.</li>
-                <li>Dependence on intermediaries.</li>
-                <li>Difficulty finding bulk buyers.</li>
-                <li>Unorganized work coordination.</li>
-                <li>Limited digital visibility.</li>
-            </ul>
-        </div>
-        <div class="info-box">
-            <h3>Our Proposed Solution</h3>
-            <ul>
-                <li>Digital product marketplace.</li>
-                <li>Artisan group management.</li>
-                <li>Direct buyer connections.</li>
-                <li>Bulk order coordination.</li>
-                <li>Transparent payment planning.</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- ARTISAN GALLERY -->
-<section id="artisans">
-    <div class="heading">
-        <h2>Meet Our Artisans</h2>
-        <p>Every handmade creation tells a story.</p>
-    </div>
-
-    <div class="grid">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=85"
-            alt="Traditional textile craft">
-            <div class="card-content">
-                <h3>Traditional Weavers</h3>
-                <p>Craftspeople creating beautiful fabrics through
-                traditional weaving techniques.</p>
-                <span class="tag">Textile Weaving</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=85"
-            alt="Pottery craft">
-            <div class="card-content">
-                <h3>Pottery Artisans</h3>
-                <p>Skilled creators shaping useful and decorative
-                pottery using traditional methods.</p>
-                <span class="tag">Pottery</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=800&q=85"
-            alt="Handicraft creator">
-            <div class="card-content">
-                <h3>Handicraft Makers</h3>
-                <p>Artisans producing handmade decorative and
-                creative products.</p>
-                <span class="tag">Handicrafts</span>
-            </div>
-        </div>
-    </div>
-    <p class="notice">These are illustrative gallery images, not verified photographs of LOOMLINK members.</p>
-</section>
-
-<!-- PRODUCTS -->
-<section id="products" class="dark-section">
-    <div class="heading">
-        <h2>Our Handmade Products</h2>
-        <p>Discover creativity made by skilled hands.</p>
-    </div>
-
-    <div class="grid">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=800&q=85"
-            alt="Traditional textile">
-            <div class="card-content">
-                <h3>Handwoven Textiles</h3>
-                <p>Beautiful fabrics inspired by traditional
-                weaving techniques.</p>
-                <div class="price">₹850</div>
-                <span class="tag">Textile Collection</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=85"
-            alt="Handmade pottery">
-            <div class="card-content">
-                <h3>Handmade Pottery</h3>
-                <p>Decorative and useful clay products made
-                by skilled artisans.</p>
-                <div class="price">₹450</div>
-                <span class="tag">Pottery Collection</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=85"
-            alt="Handmade decoration">
-            <div class="card-content">
-                <h3>Decorative Handicrafts</h3>
-                <p>Unique decorative creations for homes
-                and special occasions.</p>
-                <div class="price">₹300</div>
-                <span class="tag">Craft Collection</span>
-            </div>
-        </div>
-    </div>
-    <p class="notice">Product names and prices are sample demonstration data, not actual listings or quotations.</p>
-</section>
-
-<!-- FEATURES -->
-<section id="features">
-    <div class="heading">
-        <h2>Key Features</h2>
-        <p>One platform connecting the entire artisan community.</p>
-    </div>
-
-    <div class="grid">
-        <div class="feature">
-            <h3>User Management</h3>
-            <p>Separate roles for artisans, group leaders
-            and shopkeepers.</p>
-        </div>
-        <div class="feature">
-            <h3>Artisan Groups</h3>
-            <p>Organize artisans into groups for better
-            collaboration.</p>
-        </div>
-        <div class="feature">
-            <h3>Leadership Selection</h3>
-            <p>Demonstrate nomination and democratic
-            voting for group leaders.</p>
-        </div>
-        <div class="feature">
-            <h3>Product Marketplace</h3>
-            <p>Showcase handmade products to potential buyers.</p>
-        </div>
-        <div class="feature">
-            <h3>Bulk Orders</h3>
-            <p>Allow shopkeepers to submit bulk order requests.</p>
-        </div>
-        <div class="feature">
-            <h3>Work Allocation</h3>
-            <p>Coordinate tasks and production among group members.</p>
-        </div>
-    </div>
-</section>
-
-<!-- GROUP MANAGEMENT -->
-<section class="dark-section">
-    <div class="heading">
-        <h2>Artisan Group Management</h2>
-        <p>Stronger communities through collaboration.</p>
-    </div>
-
-    <div class="grid">
-        <div class="info-box">
-            <h3>Weavers Collective</h3>
-            <p>Focus: Handwoven fabrics and traditional textiles.</p>
-            <span class="tag">Sample Group</span>
-        </div>
-        <div class="info-box">
-            <h3>Pottery Collective</h3>
-            <p>Focus: Handmade clay products and pottery.</p>
-            <span class="tag">Sample Group</span>
-        </div>
-        <div class="info-box">
-            <h3>Handicraft Collective</h3>
-            <p>Focus: Handmade decorations and craft products.</p>
-            <span class="tag">Sample Group</span>
-        </div>
-    </div>
-</section>
-
-<!-- LEADERSHIP DEMO -->
-<section>
-    <div class="heading">
-        <h2>Group Leadership Selection</h2>
-        <p>A simple demonstration of nomination and voting.</p>
-    </div>
-
-    <div class="info-box" style="max-width:650px;margin:auto">
-        <h3>Choose a sample group leader</h3>
-
-        <label for="candidate">Select a candidate</label>
-        <select id="candidate">
-            <option value="Candidate A">Candidate A</option>
-            <option value="Candidate B">Candidate B</option>
-            <option value="Candidate C">Candidate C</option>
-        </select>
-
-        <button onclick="vote()">Cast Demo Vote</button>
-        <div class="result" id="voteResult">
-            Demo votes will appear here.
-        </div>
-        <p class="notice">Demonstration only. Votes are not stored or verified and this is not a real election.</p>
-    </div>
-</section>
-
-<!-- BULK ORDER -->
-<section class="dark-section">
-    <div class="heading">
-        <h2>Bulk Order Request</h2>
-        <p>A demonstration of how shopkeepers can contact artisan groups.</p>
-    </div>
-
-    <div class="info-box" style="max-width:650px;margin:auto">
-        <form onsubmit="placeOrder(event)">
-            <label for="buyer">Shopkeeper / Buyer Name</label>
-            <input id="buyer" type="text" placeholder="Enter your name" required>
-
-            <label for="product">Select Product</label>
-            <select id="product">
-                <option>Handwoven Textiles</option>
-                <option>Handmade Pottery</option>
-                <option>Decorative Handicrafts</option>
-            </select>
-
-            <label for="quantity">Required Quantity</label>
-            <input id="quantity" type="number" min="1"
-            placeholder="Enter quantity" required>
-
-            <label for="message">Additional Details</label>
-            <textarea id="message" rows="3"
-            placeholder="Enter your requirements"></textarea>
-
-            <button type="submit">Submit Demo Request</button>
-        </form>
-
-        <div class="result" id="orderResult">
-            Your demo request result will appear here.
-        </div>
-        <p class="notice">This sample form does not send or save orders. A backend and database are needed for real requests.</p>
-    </div>
-</section>
-
-<!-- WORK ALLOCATION -->
-<section>
-    <div class="heading">
-        <h2>Work Allocation System</h2>
-        <p>Illustrative task coordination inside an artisan group.</p>
-    </div>
-
-    <div style="overflow-x:auto">
-        <table>
-            <tr>
-                <th>Group Member</th>
-                <th>Assigned Task</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>Member 1</td>
-                <td>Material Preparation</td>
-                <td>In Progress</td>
-            </tr>
-            <tr>
-                <td>Member 2</td>
-                <td>Product Weaving</td>
-                <td>Pending</td>
-            </tr>
-            <tr>
-                <td>Member 3</td>
-                <td>Quality Checking</td>
-                <td>Pending</td>
-            </tr>
-            <tr>
-                <td>Member 4</td>
-                <td>Product Packaging</td>
-                <td>Pending</td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<!-- WORKFLOW -->
-<section class="dark-section" id="workflow">
-    <div class="heading">
-        <h2>How LOOMLINK Works</h2>
-        <p>A simple journey from artisan creation to customer connection.</p>
-    </div>
-
-    <div class="workflow">
-        <div class="step">
-            <h3>01. Artisan Registration</h3>
-            <p>Artisans join the platform and create their profiles.</p>
-        </div>
-        <div class="step">
-            <h3>02. Group Formation</h3>
-            <p>Artisans organize themselves into working groups.</p>
-        </div>
-        <div class="step">
-            <h3>03. Product Listing</h3>
-            <p>Artisans display their handmade products.</p>
-        </div>
-        <div class="step">
-            <h3>04. Buyer Connection</h3>
-            <p>Shopkeepers and customers explore products and
-            submit order enquiries.</p>
-        </div>
-        <div class="step">
-            <h3>05. Production & Distribution</h3>
-            <p>Groups coordinate production, quality checking
-            and order fulfilment.</p>
-        </div>
-    </div>
-</section>
-
-<!-- PAYMENT CALCULATOR -->
-<section>
-    <div class="heading">
-        <h2>Payment Distribution Calculator</h2>
-        <p>An illustrative 95:5 distribution model.</p>
-    </div>
-
-    <div class="info-box" style="max-width:650px;margin:auto">
-        <label for="amount">Enter Total Order Amount (₹)</label>
-        <input type="number" id="amount" min="0"
-        placeholder="Example: 10000">
-
-        <button onclick="calculate()">Calculate Distribution</button>
-
-        <div class="result" id="paymentResult">
-            Enter an amount to see the sample distribution.
-        </div>
-        <p class="notice">
-            This is a proposed demonstration model only:
-            95% for the artisan group and 5% for coordination.
-            It is not an established payment policy.
-        </p>
-    </div>
-</section>
-
-<!-- TECHNOLOGY -->
-<section class="dark-section">
-    <div class="heading">
-        <h2>Technology Stack</h2>
-        <p>Technologies planned for developing LOOMLINK.</p>
-    </div>
-
-    <div class="grid">
-        <div class="feature">
-            <h3>HTML</h3>
-            <p>Structure of the website.</p>
-        </div>
-        <div class="feature">
-            <h3>CSS</h3>
-            <p>Design and responsive layout.</p>
-        </div>
-        <div class="feature">
-            <h3>JavaScript</h3>
-            <p>Interactive prototype features.</p>
-        </div>
-        <div class="feature">
-            <h3>Python Flask</h3>
-            <p>Planned backend development.</p>
-        </div>
-        <div class="feature">
-            <h3>SQLite</h3>
-            <p>Planned database management.</p>
-        </div>
-    </div>
-</section>
-
-<!-- SDG IMPACT -->
-<section id="impact">
-    <div class="heading">
-        <h2>Social Impact & SDG Alignment</h2>
-        <p>Supporting sustainable and inclusive development.</p>
-    </div>
-
-    <div class="grid">
-        <div class="info-box">
-            <h3>SDG 8 – Decent Work</h3>
-            <p>Supports artisan livelihoods and access
-            to market opportunities.</p>
-        </div>
-        <div class="info-box">
-            <h3>SDG 9 – Innovation</h3>
-            <p>Uses digital technology to strengthen
-            traditional craft communities.</p>
-        </div>
-        <div class="info-box">
-            <h3>SDG 12 – Responsible Consumption</h3>
-            <p>Promotes handmade products and
-            traditional production practices.</p>
-        </div>
-    </div>
-</section>
-
-<!-- FUTURE SCOPE -->
-<section class="dark-section">
-    <div class="heading">
-        <h2>Future Scope</h2>
-        <p>Taking the LOOMLINK vision further.</p>
-    </div>
-
-    <div class="intro">
-        <p>• AI-assisted product descriptions.</p>
-        <p>• Regional language support.</p>
-        <p>• Secure online payments.</p>
-        <p>• Real-time order tracking.</p>
-        <p>• Artisan performance dashboards.</p>
-        <p>• Expansion to more artisan communities.</p>
-    </div>
-</section>
-
-<footer>
-    <h2>LOOMLINK</h2>
-    <p>Empowering Artisans. Preserving Traditions.</p>
-    <p>TECH4BHARAT 2026 | Team Alpha Coders</p>
-    <p>© 2026 LOOMLINK Prototype</p>
-</footer>
-
-<script>
-let votes = {
-    "Candidate A": 0,
-    "Candidate B": 0,
-    "Candidate C": 0
-};
-
-function vote() {
-    let candidate = document.getElementById("candidate").value;
-    votes[candidate]++;
-
-    let result = "Demo voting results: ";
-    for (let name in votes) {
-        result += name + ": " + votes[name] + " | ";
-    }
-
-    document.getElementById("voteResult").textContent = result;
-}
-
-function placeOrder(event) {
-    event.preventDefault();
-
-    let buyer = document.getElementById("buyer").value;
-    let product = document.getElementById("product").value;
-    let quantity = document.getElementById("quantity").value;
-
-    document.getElementById("orderResult").textContent =
-        "Demo request prepared for " + buyer +
-        " | Product: " + product +
-        " | Quantity: " + quantity +
-        ". This request has not been sent or saved.";
-}
-
-function calculate() {
-    let amount = Number(document.getElementById("amount").value);
-
-    if (amount <= 0 || !Number.isFinite(amount)) {
-        document.getElementById("paymentResult").textContent =
-            "Please enter a valid amount greater than zero.";
-        return;
-    }
-
-    let artisanShare = amount * 0.95;
-    let leaderShare = amount * 0.05;
-
-    document.getElementById("paymentResult").innerHTML =
-        "Total Order: ₹" + amount.toFixed(2) +
-        "<br>Artisan Group (95%): ₹" + artisanShare.toFixed(2) +
-        "<br>Coordination (5%): ₹" + leaderShare.toFixed(2);
-}
-</script>
-
-</body>
-</html>
